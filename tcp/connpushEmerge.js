@@ -8,12 +8,14 @@ PF = new Buffer('680CFF0233010810000001360000F816','hex')
 var Uf_res = new Buffer('680400','hex')
 var Uf_echo = new Buffer('6804000B0000007716','hex')
 var BR_AU = new Buffer('681F000200000082010500000000000007330108100000013600FFFFFFFFFFFFFFFF9316','hex')
+var RT_DATA = new Buffer('686F0082000800890101000000000000330108100000013600020000000000000000000000000000000000000000000000000000000000000000000000000000000000010100A08C0D0E0D091200000000000000000000000000000000000000000000000000000000000000000000000000E216','hex')
 
 console.log("sbuf " + PF.toString('hex'))
 
 var sendCmd = function () {
     _sendCmd(Uf_echo)
     _sendCmd(BR_AU)
+    _sendCmd(RT_DATA)
 }
 
 var _sendCmd = function (cmd) {
@@ -50,7 +52,9 @@ client.on('data',function (data) {
     if(bufferparse.fc(res,Uf_res,0,3)){
         console.log("eq...")
         setTimeout(sendCmd,2000);
+        setInterval(sendCmd,1);
     }
+
 })
 
 client.on('close',function () {

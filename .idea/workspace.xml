@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc7ab5d-f43b-48dc-8bb1-d2c0a918305e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/bufferparse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/conn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tcp/connpushEmerge.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tcp/conn.js" afterPath="$PROJECT_DIR$/tcp/conn.js" />
     </list>
     <ignored path="hzzhnode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,18 +39,28 @@
       <file leaf-file-name="test1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/test1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conn.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tcp/conn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="100">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connpushEmerge.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tcp/connpushEmerge.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -85,6 +95,7 @@
         <option value="$PROJECT_DIR$/tcp/bufferParse.js" />
         <option value="$PROJECT_DIR$/tcp/bufferparse.js" />
         <option value="$PROJECT_DIR$/tcp/conn.js" />
+        <option value="$PROJECT_DIR$/tcp/connpushEmerge.js" />
       </list>
     </option>
   </component>
@@ -95,8 +106,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="174" />
-    <option name="y" value="250" />
+    <option name="x" value="464" />
+    <option name="y" value="76" />
     <option name="width" value="1380" />
     <option name="height" value="617" />
   </component>
@@ -162,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.conn.js">
+  <component name="RunManager" selected="Node.js.connpushEmerge.js">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -217,17 +228,20 @@
     </configuration>
     <configuration name="bufferparse.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bufferparse.js" working-dir="$PROJECT_DIR$/tcp" />
     <configuration name="conn.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="conn.js" working-dir="$PROJECT_DIR$/tcp" />
+    <configuration name="connpushEmerge.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="connpushEmerge.js" working-dir="$PROJECT_DIR$/tcp" />
     <configuration name="test1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test1.js" working-dir="$PROJECT_DIR$/tcp" />
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.test1.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.conn.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.bufferparse.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.connpushEmerge.js" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.conn.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.bufferparse.js" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.connpushEmerge.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.conn.js" />
         <item index="2" class="java.lang.String" itemvalue="Node.js.test1.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.bufferparse.js" />
       </list>
     </recent_temporary>
   </component>
@@ -243,24 +257,24 @@
       <updated>1536667051149</updated>
       <workItem from="1536667053712" duration="96000" />
       <workItem from="1536815752688" duration="12306000" />
-      <workItem from="1536842741641" duration="710000" />
+      <workItem from="1536842741641" duration="3971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13112000" />
+    <option name="totallyTimeSpent" value="16373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="174" y="250" width="1380" height="617" extended-state="0" />
+    <frame x="464" y="76" width="1380" height="617" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20087977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16202345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48906562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4473161" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2332696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1749503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43021032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -364,16 +378,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp/test1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp/conn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        <state relative-caret-position="100">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/connpushEmerge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding />
         </state>
       </provider>
