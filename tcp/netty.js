@@ -1,5 +1,5 @@
 var HOST = '127.0.0.1'
-var PORT = 2403
+var PORT = 8080
 var net = require('net')
 var client = new net.Socket();
 var bufferparse = require('./bufferparse')
