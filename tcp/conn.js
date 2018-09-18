@@ -24,6 +24,7 @@ var _sendCmd = function (cmd) {
 var sendPf = function () {
     console.log('send PF ' + PF.toString('hex'))
     client.write(PF)
+    client.destroy()
 }
 
 var sendIf = function () {
@@ -39,6 +40,8 @@ var sendUf = function () {
 client.connect(PORT,HOST,function(){
     console.log("conn.. " + HOST + " : " + PORT);
     sendPf()
+
+
 
 });
 

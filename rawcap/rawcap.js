@@ -10,5 +10,4 @@ function runCmdTest(cmd) {
     nodeCmd.run(cmd);
 }
 
-runCmdTest('netstat -ano | findstr 50345')
-runCmdTest('tasklist | findstr 7436')
+runCmdTest('RawCap')
