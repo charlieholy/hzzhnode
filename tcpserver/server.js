@@ -1,16 +1,46 @@
-/**
- * 构建TCP客户端
- */
+var net = require('net');
 
-/* 引入net模块 */
-var net = require("net");
+var server = net.createServer();
 
-/* 创建TCP服务器 */
-var server = net.createServer(function(socket){
-    console.log('someone connects');
-})
+//聚合所有客户端
+var sockets = [];
 
-/* 设置连接的服务器 */
-server.listen(2403, function(){
-    console.log("Creat server on http://127.0.0.1:8000/");
-})
+//接受新的客户端连接
+server.on('connection', function(socket){
+    console.log('got a new connection');
+    sockets.push(socket);
+
+    socket.on("error", function (err) {
+        // dosomething...
+        console.log("error client")
+    });
+    //从连接中读取数据
+    socket.on('data', function(data){
+        console.log('got data:', data);
+
+        //广播数据
+        //每当一个已连接的用户输入数据，就将这些数据广播给其他所有已连接的用户
+        sockets.forEach(function(otherSocket){
+            if (otherSocket !== socket){
+                otherSocket.write(data);
+            }
+        });
+
+        //删除被关闭的连接
+        socket.on('close', function(){
+            console.log('connection closed');
+            var index = sockets.indexOf(socket);
+            sockets.splice(index, 1);
+        });
+    });
+});
+
+server.on('error', function(err){
+    console.log('Server error:', err.message);
+});
+
+server.on('close', function(){
+    console.log('Server closed');
+});
+
+server.listen(2403);

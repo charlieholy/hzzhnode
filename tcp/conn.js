@@ -24,7 +24,7 @@ var _sendCmd = function (cmd) {
 var sendPf = function () {
     console.log('send PF ' + PF.toString('hex'))
     client.write(PF)
-    client.destroy()
+   // client.destroy()
 }
 
 var sendIf = function () {
