@@ -2,7 +2,7 @@
 //94 13 03 04 10 00 00 05 33 37 10 01 00 00 61 16
 var startFlag = '68'
 var cmdlen = '1b00'
-var ctrl = 'ce054400'
+var ctrl = '00000000'
 // /**
 //  * ASDU类型   log_summon
 //  */
@@ -11,11 +11,11 @@ var ctrl = 'ce054400'
 // private byte con[]=new byte[2];
 // private byte conn_address[]=new byte[2];
 // private byte body_address[]=new byte[3];
-var asduHead = '820007000000000000'
+var asduHead = '820000000000000000'
 var apciType = '94'
 var onlyCode = '3710'
-var isSuccess = '01'
-var reason = '0000'
+var isSuccess = '00'
+var reason = '0100'
 var crc = '00'
 var endFlag = '16'
 
