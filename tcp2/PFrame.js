@@ -18,7 +18,6 @@ var mybuf = function (data) {
     len = len/2;
     FBuf.write(data,step,'hex')
     step += len;
-    console.log("step: " + step)
 }
 
 
@@ -44,7 +43,7 @@ var getDevFrame = function(devCode){
     var crcR = Buffer.from([crc])
     mybuf(crcR.toString('hex'));
     mybuf(endFlag);
-
+    step = 0;
     return FBuf;
 }
 
