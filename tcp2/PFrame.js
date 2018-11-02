@@ -25,7 +25,7 @@ var mybuf = function (data) {
 
 console.log("buf: "+FBuf.toString('hex'))
 
-var getDevFrame = function(devCode){
+var getDevPFrame = function(devCode){
     console.log("getDevFrame.. " + devCode);
     mybuf(startFlag);
     mybuf(cmdlen);
@@ -48,7 +48,7 @@ var getDevFrame = function(devCode){
 }
 
 var PF={
-    get:getDevFrame
+    get:getDevPFrame
 };
 
 module.exports= PF;
