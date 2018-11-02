@@ -1,8 +1,9 @@
 //68 0CFF02 3301081000000136 00 00 F8 16
+//680CFF0233010810000001360000F816
 var startFlag = '68'
 var cmdlen = '0c'
 var firstRun = 'ff'
-var version = '0x'
+var version = '02'
 var devCode = "3301081000000136"
 var port = '00'
 var station = '00'
@@ -28,6 +29,26 @@ mybuf(version);
 mybuf(devCode);
 mybuf(port);
 mybuf(station);
-mybuf(crc);
+
+var crc = 0;
+for(var i = 0;i<step;i++){
+    crc += (FBuf[i]&(0xff));
+}
+var crcR = 0;
+crcR = crc%256;
+console.log(crcR)
+const buf4 = Buffer.from([crcR])
+
+mybuf(buf4.toString('hex'));
 mybuf(endFlag);
 console.log("buf: "+FBuf.toString('hex'))
+
+var getDevFrame = function(devCode){
+    console.log("getDevFrame.. " + devCode);
+}
+
+var PF={
+    get:getDevFrame
+};
+
+module.exports= PF;
