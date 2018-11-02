@@ -4,7 +4,6 @@ var startFlag = '68'
 var cmdlen = '0c'
 var firstRun = 'ff'
 var version = '02'
-var devCode = "3301081000000136"
 var port = '00'
 var station = '00'
 var crc = '00'
@@ -22,29 +21,31 @@ var mybuf = function (data) {
     console.log("step: " + step)
 }
 
-mybuf(startFlag);
-mybuf(cmdlen);
-mybuf(firstRun);
-mybuf(version);
-mybuf(devCode);
-mybuf(port);
-mybuf(station);
 
-var crc = 0;
-for(var i = 0;i<step;i++){
-    crc += (FBuf[i]&(0xff));
-}
-var crcR = 0;
-crcR = crc%256;
-console.log(crcR)
-const buf4 = Buffer.from([crcR])
 
-mybuf(buf4.toString('hex'));
-mybuf(endFlag);
+
 console.log("buf: "+FBuf.toString('hex'))
 
 var getDevFrame = function(devCode){
     console.log("getDevFrame.. " + devCode);
+    mybuf(startFlag);
+    mybuf(cmdlen);
+    mybuf(firstRun);
+    mybuf(version);
+    mybuf(devCode);
+    mybuf(port);
+    mybuf(station);
+
+    var crc = 0;
+    for(var i = 0;i<step;i++){
+        crc += (FBuf[i]&(0xff));
+    }
+    crc = crc%256;
+    var crcR = Buffer.from([crc])
+    mybuf(crcR.toString('hex'));
+    mybuf(endFlag);
+
+    return FBuf;
 }
 
 var PF={
