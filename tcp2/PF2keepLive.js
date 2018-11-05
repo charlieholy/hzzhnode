@@ -7,12 +7,17 @@ var client = new net.Socket();
 var fp = require('./PFrame')
 var pframe = fp.get("1303041000000532");
 
+var keepLive = function () {
+    console.log("keep...");
+    client.write("a");
 
+}
 
 var sendPf = function () {
     console.log('send PF ' + pframe.toString('hex'))
     client.write(pframe)
     //client.end()
+    setInterval(keepLive,1000);
 }
 
 

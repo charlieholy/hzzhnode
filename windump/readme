@@ -1,0 +1,12 @@
+windump 是windows版本的tcpdump
+windump -i 1 -s 0 -X port 2403
+
+
+
+过滤post请求
+tcpdump -s 0 -A 'tcp dst port 9080 and (tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354)'
+过滤redis
+tcpdump -s 0 -A 'tcp port 6379 and tcp port 50807' | grep 1101011000000128
+过滤mq
+过滤dubbo
+过滤mysql
