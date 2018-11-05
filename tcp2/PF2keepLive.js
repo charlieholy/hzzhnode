@@ -28,9 +28,13 @@ client.connect(PORT,HOST,function(){
 
 client.on('data',function (data) {
     console.log('Data: ' + data)
-    //var res = new Buffer(data);
-    //console.log(res.toString('hex'))
+    var res = new Buffer(data);
+    console.log(res.toString('hex'))
 
+})
+
+client.on('error',function (err) {
+    console.log('error..' + err)
 })
 
 client.on('close',function () {
