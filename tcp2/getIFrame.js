@@ -1,4 +1,4 @@
-var fi = require('./IFrame')
+var fi = require('./IFrameLogSummonRsp')
 
 var iframe = fi.get("3301081000000139");
 console.log(iframe,'hex');
