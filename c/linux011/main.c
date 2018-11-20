@@ -12,5 +12,7 @@ char *ss = "123aasdasdw56";
     int i;
     str(i);
     printf("%d\n",i);
+    int j;
+    printf("%d\n",get_base(j));
     return 0;
 }

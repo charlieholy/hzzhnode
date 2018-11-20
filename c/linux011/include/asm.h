@@ -22,7 +22,21 @@ int inline m_strlen(const char * s)
 extern inline int m_strlen(const char * s);
 
 
+static inline unsigned long _get_base(char * addr)
+{
+         unsigned long __base;
+         __asm__("movb %3,%%dh\n\t"
+                 "movb %2,%%dl\n\t"
+                 "shll $16,%%edx\n\t"
+                 "movw %1,%%dx"
+                 :"=&d" (__base)
+                 :"m" (*((addr)+2)),
+                  "m" (*((addr)+4)),
+                  "m" (*((addr)+7)));
+         return __base;
+}
 
+#define get_base(ldt) _get_base( ((char *)&(ldt)) )
 
 
 #endif
