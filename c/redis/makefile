@@ -9,7 +9,7 @@ SRCS = $(wildcard *.c)
 OBJS = $(patsubst %c, %o, $(SRCS))
 
 # 可执行文件的名字
-TARGET = main
+TARGET = redis
 
 # .PHONE伪目标，具体含义百度一下一大堆介绍
 .PHONY:all clean
