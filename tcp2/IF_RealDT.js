@@ -1,10 +1,10 @@
 var HOST = '127.0.0.1'
-
+//HOST = '47.99.33.240'
 var PORT = 2403
 var net = require('net')
 var client = new net.Socket();
 
-var fi = require('./IFrame138')
+var fi = require('./IFrame134')
 var iframe = fi.get("3301082000001847");
 
 
@@ -21,8 +21,6 @@ var sendIf = function () {
 client.connect(PORT,HOST,function(){
 	console.log("conn.. " + HOST + " : " + PORT);
 	sendIf()
-
-
 
 });
 
