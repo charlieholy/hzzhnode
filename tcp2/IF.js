@@ -1,13 +1,13 @@
 var HOST = '127.0.0.1'
-//HOST = '223.223.223.174'
+HOST = '47.99.33.240'
 var PORT = 2403
 var net = require('net')
 var client = new net.Socket();
 
-var fi = require('./IFrameSystemSettingPasswdRsp')
-//var fi = require('./IFrameSystemSettingLogUpdateUrl')
+//var fi = require('./IFrameSystemSettingPasswdRsp')
+var fi = require('./IFrameSystemSettingLogUpdateUrl')
 //var fi = require('./IFrameLogSummonRsp')
-var iframe = fi.get("1101010000001530");
+var iframe = fi.get("3301082000001847");
 
 
 

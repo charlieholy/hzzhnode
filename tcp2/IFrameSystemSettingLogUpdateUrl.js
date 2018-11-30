@@ -58,6 +58,7 @@ var getDevIFrame = function(devCode){
     var crcR = Buffer.from([crc])
     mybuf(crcR.toString('hex'));
     mybuf(endFlag);
+    console.log("len: " + step)
     step = 0;
     return FBuf;
 }
