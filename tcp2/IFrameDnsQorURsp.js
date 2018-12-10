@@ -1,7 +1,7 @@
 //68 1b 00 ce 05 44 00 82 00 07 00 00 00 00 00 00
 //94 13 03 04 10 00 00 05 33 37 10 01 00 00 61 16
 var startFlag = '68'
-var cmdlen = '1b00'
+var cmdlen = '2800'
 var ctrl = '00000000'
 // /**
 //  * ASDU类型   log_summon
@@ -12,14 +12,16 @@ var ctrl = '00000000'
 // private byte conn_address[]=new byte[2];
 // private byte body_address[]=new byte[3];
 var asduHead = '820000000000000000'
-var apciType = '94'
-var onlyCode = '3710'
-var isSuccess = '00'
-var reason = '0100'
-var crc = '00'
+var apciType = 'A1'
+var port = '00'
+var oper = "01"
+var onlyCode = '01020304050607'
+var ip = 'Dfdfdfdf0000'
+var isSuccess = '01'
+var reason = '0001'
 var endFlag = '16'
 
-var FBuf = Buffer.alloc(32);
+var FBuf = Buffer.alloc(45);
 var step = 0;
 
 
@@ -44,7 +46,10 @@ var getDevIFrame = function(devCode){
 	mybuf(asduHead);
 	mybuf(apciType);
 	mybuf(devCode);
+	mybuf(port)
+	mybuf(oper)
 	mybuf(onlyCode);
+	mybuf(ip)
 	mybuf(isSuccess);
 	mybuf(reason);
 
@@ -56,6 +61,7 @@ var getDevIFrame = function(devCode){
 	var crcR = Buffer.from([crc])
 	mybuf(crcR.toString('hex'));
 	mybuf(endFlag);
+	console.log("step: " + step)
 	step = 0;
 	return FBuf;
 }

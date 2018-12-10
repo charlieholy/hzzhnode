@@ -5,7 +5,8 @@ var net = require('net')
 var client = new net.Socket();
 
 //var fi = require('./IFrameSystemSettingPasswdRsp')
-var fi = require('./IFrameSystemSettingLogUpdateUrl')
+//var fi = require('./IFrameDnsQorURsp')
+var fi = require('./IFrameSystemDnsRsp')
 //var fi = require('./IFrameLogSummonRsp')
 var iframe = fi.get("3301082000001847");
 

@@ -1,10 +1,11 @@
+//681f000200000082010500000000000007330108100000184800ffffffffffffffffbc16
 //68 1b 00 ce 05 44 00 82 00 07 00 00 00 00 00 00
 //94 13 03 04 10 00 00 05 33 37 10 01 00 00 61 16
 var startFlag = '68'
-var cmdlen = '1b00'
+var cmdlen = '1f00'
 var ctrl = '00000000'
 // /**
-//  * ASDU类型   log_summon
+//  * ASDU类型  auth_start
 //  */
 // private byte type;
 // private byte limit;//VSQ
@@ -12,14 +13,12 @@ var ctrl = '00000000'
 // private byte conn_address[]=new byte[2];
 // private byte body_address[]=new byte[3];
 var asduHead = '820000000000000000'
-var apciType = '94'
-var onlyCode = '3710'
-var isSuccess = '00'
-var reason = '0100'
-var crc = '00'
+var apciType = '07'
+var port = '00'
+var esam = "ffffffffffffffff"
 var endFlag = '16'
 
-var FBuf = Buffer.alloc(32);
+var FBuf = Buffer.alloc(109);
 var step = 0;
 
 
@@ -44,9 +43,9 @@ var getDevIFrame = function(devCode){
 	mybuf(asduHead);
 	mybuf(apciType);
 	mybuf(devCode);
-	mybuf(onlyCode);
-	mybuf(isSuccess);
-	mybuf(reason);
+	mybuf(port);
+	mybuf(esam);
+
 
 	var crc = 0;
 	for(var i = 0;i<step;i++){
@@ -56,6 +55,7 @@ var getDevIFrame = function(devCode){
 	var crcR = Buffer.from([crc])
 	mybuf(crcR.toString('hex'));
 	mybuf(endFlag);
+	console.log("len: " + step)
 	step = 0;
 	return FBuf;
 }

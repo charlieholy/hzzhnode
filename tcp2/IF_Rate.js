@@ -4,10 +4,10 @@ var PORT = 2403
 var net = require('net')
 var client = new net.Socket();
 
-var fi = require('./IFrameSystemSettingPasswdRsp')
+var fi = require('./IFrameDnsQorURsp')
 //var fi = require('./IFrameSystemSettingLogUpdateUrl')
 //var fi = require('./IFrameLogSummonRsp')
-var iframe = fi.get("1101010000001530");
+var iframe = fi.get("3301082000001847");
 //发送费率回包
 
 // 失败1 原因1
