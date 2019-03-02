@@ -3,13 +3,14 @@
  *    从身份认证到Bi 结束
  */
 var HOST = '127.0.0.1'
-HOST = '47.99.33.240'
+HOST = '47.98.96.246'
 var PORT = 2403
 var net = require('net')
 var client = new net.Socket();
 
 var pF = require('../common/pFrame/PFrame')
 var iF_Bi = require('../common/iFrame/BiResult')
+var p56Time = require('../common/utils/p56Time')
 
 var dev_code = "3101011000000207"
 
@@ -54,13 +55,10 @@ client.on('data',function (data) {
         else  if(data[7] == 0x67){
             console.log("收到对时协议...")
             console.log("服务器时间为 ")
-            console.log("20" + data[length-3] + "年")
-            console.log(data[length-4] + "月")
-            console.log(data[length-5] + "日")
-            console.log(data[length-6] + "时")
-            console.log(data[length-7] + "分")
-            console.log(((data[length-8]<<8) + data[length-9])/1000 + "秒")
-            console.log("over...")
+            var timeData  = data.slice(length-9,length-2);
+            var timeString = p56Time.getStringByP56Time(timeData)
+            console.log(timeString)
+
         }
         else if(data[7] ==  0x85){
             console.log("收到I帧...")

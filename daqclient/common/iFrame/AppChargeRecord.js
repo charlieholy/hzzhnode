@@ -1,13 +1,27 @@
 /**
  * Created by chenpeiwen on 2019/3/2.
- * Bi结束之后 会有
+ *
+ * 用于测试离线订单上传 参数为设置开始时间为当前时间 结束时间为当前时间 dev_code
  */
+
+//发起充电方式
+//App充电
+var chargeType_App = '01';
+//卡充电
+var chargeType_Card = '02';
+//离线充电码
+var chargeType_OffLine = '03';
+//vin码充电
+var chargeType_VinCode = '04';
+//密码充电
+var chargeType_Pass = '05';
+
 
 //反推长度计算  [1 + 2 + 4 + 9] + [ 1+ 8 + 2 + 1+ 1]  = 16 + 13 = 29
 // len  = 29 -5  魔术字是5
 
 var startFlag = '68'
-var cmdlen = '1800'
+var cmdlen = 'D300'
 var ctrl = '00000000'
 // /**
 //  * ASDU类型   log_summon
@@ -22,8 +36,19 @@ var apciType = '0d'
 //桩编号  长度  8byte   压缩bcd
 var devcode = '1234567890123456'
 var port = '00'
-var success = '00'
-var crc = '00'
+//交易流水号 16byte
+var serialNumber = '12345678901234567890123456789012'
+//发起充电方式
+var chargeType = chargeType_App;
+//esam序列号
+var esam = '01020304050607'
+
+//分时计费模型
+var timeCharge = '00'
+var startTime = ''
+var endTime = ''
+
+//物理卡号
 var endFlag = '16'
 
 var FBuf = Buffer.alloc(32);
