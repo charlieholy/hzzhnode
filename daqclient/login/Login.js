@@ -46,7 +46,7 @@ client.on('data',function (data) {
     var buf = new Buffer(data);
     console.log(new Date(),buf.length,buf.toString('hex'))
     var length = data.length
-    if(length > 5){
+    if(length > 8){
         if(data[2] == 0xff ){
             console.log("收到P帧.....")
             sendBi();
@@ -61,6 +61,18 @@ client.on('data',function (data) {
             console.log(data[length-7] + "分")
             console.log(((data[length-8]<<8) + data[length-9])/1000 + "秒")
             console.log("over...")
+        }
+        else if(data[7] ==  0x85){
+            console.log("收到I帧...")
+            if(data[16] == 0x8d){
+                console.log("查询产品信息...")
+            }
+            else if(data[16] == 0x33){
+                console.log("费率下发...")
+            }
+            else if(data[16] == 0x96){
+                console.log("离线码下发...")
+            }
         }
     }
 

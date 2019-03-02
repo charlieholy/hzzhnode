@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc7ab5d-f43b-48dc-8bb1-d2c0a918305e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daqclient/common/iFrame/BiResult.js" afterPath="$PROJECT_DIR$/daqclient/common/iFrame/BiResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daqclient/common/iFrame/test.js" afterPath="$PROJECT_DIR$/daqclient/common/iFrame/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daqclient/login/Login.js" afterPath="$PROJECT_DIR$/daqclient/login/Login.js" />
     </list>
     <ignored path="hzzhnode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,21 +28,29 @@
       <file leaf-file-name="BiResult.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daqclient/common/iFrame/BiResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
+            <state relative-caret-position="-119">
               <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daqclient/common/iFrame/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-              <folding>
-                <element signature="e#46#91#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/daqclient/login/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,8 +58,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daqclient/common/pFrame/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="24" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="37" selection-end-column="2" />
               <folding>
                 <element signature="e#0#45#0" expanded="false" />
               </folding>
@@ -64,7 +70,7 @@
       <file leaf-file-name="PFrame.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daqclient/common/pFrame/PFrame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="31">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
@@ -125,16 +131,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="134test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tcp2/134test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -176,7 +172,6 @@
         <option value="$PROJECT_DIR$/daqclient/offLineCharge/readme" />
         <option value="$PROJECT_DIR$/daqclient/offLineCharge/AppChargeRecord.js" />
         <option value="$PROJECT_DIR$/daqclient/login/readme" />
-        <option value="$PROJECT_DIR$/daqclient/login/Login.js" />
         <option value="$PROJECT_DIR$/daqclient/common/readme" />
         <option value="$PROJECT_DIR$/daqclient/common/pFrame/PFrame.js" />
         <option value="$PROJECT_DIR$/tcp2/PF.js" />
@@ -184,6 +179,7 @@
         <option value="$PROJECT_DIR$/tcp2/IFrameAuthStart.js" />
         <option value="$PROJECT_DIR$/daqclient/common/iFrame/BiResult.js" />
         <option value="$PROJECT_DIR$/daqclient/common/iFrame/test.js" />
+        <option value="$PROJECT_DIR$/daqclient/login/Login.js" />
       </list>
     </option>
   </component>
@@ -402,10 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.test.js (1)">
-    <configuration default="false" name="conn.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="conn.js" working-dir="$PROJECT_DIR$/tcp">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.Login.js">
     <configuration default="false" name="singleSend.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="singleSend.js" working-dir="$PROJECT_DIR$/tcp3">
       <method />
     </configuration>
@@ -416,6 +409,9 @@
       <method />
     </configuration>
     <configuration default="false" name="test.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/daqclient/common/iFrame">
+      <method />
+    </configuration>
+    <configuration default="false" name="Login.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="Login.js" working-dir="$PROJECT_DIR$/daqclient/login">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -472,19 +468,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.conn.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.singleSend.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.PF.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.singleSend.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.PF.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.Login.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.PF.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.singleSend.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.conn.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.Login.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.PF.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.singleSend.js" />
       </list>
     </recent_temporary>
   </component>
@@ -511,12 +507,12 @@
       <workItem from="1543722965519" duration="4296000" />
       <workItem from="1544886817137" duration="1774000" />
       <workItem from="1549117946371" duration="5925000" />
-      <workItem from="1551502392800" duration="4563000" />
+      <workItem from="1551502392800" duration="5647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46639000" />
+    <option name="totallyTimeSpent" value="47723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="848" extended-state="6" />
@@ -526,9 +522,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43132222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5648267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3080873" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31964058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43021032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -804,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daqclient/login/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daqclient/common/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -896,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daqclient/common/pFrame/PFrame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tcp2/IF.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -940,10 +920,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/daqclient/common/pFrame/PFrame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/daqclient/common/pFrame/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="37" selection-end-column="2" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
@@ -952,7 +940,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daqclient/common/iFrame/BiResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
+        <state relative-caret-position="-119">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
@@ -960,11 +948,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daqclient/common/iFrame/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-          <folding>
-            <element signature="e#46#91#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daqclient/login/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
