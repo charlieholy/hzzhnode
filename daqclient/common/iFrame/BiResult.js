@@ -19,7 +19,7 @@ var ctrl = '00000000'
 var asduHead = '820000000000000000'
 var apciType = '0d'
 //桩编号  长度  8byte   压缩bcd
-var devcode = "1234567890123456"
+var devcode = '1234567890123456'
 var port = '00'
 var success = '00'
 var crc = '00'
